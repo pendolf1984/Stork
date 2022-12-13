@@ -10,6 +10,6 @@ filepath = "D:\\certs\\time.xlsx"
 
 server = smtplib.SMTP('mail.1mf.ru', 25)
 
-addr_from = "stork@1mf.ru"
-addr_to = ['o.burmistrov@1mf.ru']
-addr_cc = ['t.sharuk@1mf.ru', 't.kazanskaya@1mf.ru']
+addr_from = ""
+addr_to = [']
+addr_cc = ['', '']
