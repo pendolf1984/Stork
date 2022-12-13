@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Учет рабочего времени</title>
+</head>
+<body>
+<table border="3">
+    <tr>
+        <td>Начало дня: {{ date_start }}</td>
+    </tr>
+    <tr>
+        <td>Конец дня: {{ date_end }}</td>
+    </tr>
+</table>
+<table border="3">
+    <tr></tr>
+    <tr>
+        <td>Отдел</td><td>Фамилия</td><td>Имя</td><td>Отчество</td><td>Первый проход</td><td>Последний проход</td><td>TM_RAB</td>
+    </tr>
+    {% for department, surname, name, patronymics, first, end, rb_time in row %}
+        <tr>
+            <td>{{ department }}</td>
+            <td>{{ surname }}</td>
+            <td>{{ name }}</td>
+            <td>{{ patronymics }}</td>
+            <td>{{ first }}</td>
+            <td>{{ end }}</td>
+            <td>{{ rb_time }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
